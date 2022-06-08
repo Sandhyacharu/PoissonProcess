@@ -47,4 +47,4 @@ print(" rate of 3 per minute during a time interval of 2 min.",m)
  ![image](https://user-images.githubusercontent.com/75235167/172533890-f035d4e0-cfa4-4ea8-b189-54efc4242a80.png)
  
 ## Results :
-
+The probability of the following are found given that the customers arrive at a bank according to a Poisson process with mean rate of 3 per minute during a time interval of 2 min. (i) exactly 4 customers arrive (ii) more than 4 customers arrive (iii) fewer than 4 customers in 2 minute arrival.
