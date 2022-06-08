@@ -3,7 +3,6 @@
 # Aim : 
 To find the probability of that  (i) exactly 4 customers arrive (ii) more than 4 customers arrive (iii) fewer than 4 customers in 2 minute  arrival. Given that the customers arrive at a bank according to a Poisson process with mean rate of 3 per minute  during a time interval of 2 min. 
 
-
 # Software required :  
 
 Python
@@ -21,11 +20,31 @@ The Poisson process is one of the most widely-used counting processes. It is usu
 
 ![image](https://user-images.githubusercontent.com/104613195/171325180-eaf80506-545c-4f35-878a-1e95aa0e81e3.png)
 
-
-
 # Program :
+# Developed by
+# Register Number: 212220230041
+# Name: N Sandhya Charu
 
+import numpy as np
+import math
+
+l=3
+t=2
+
+def p(x):
+    return round(math.exp(-l*t)*((l*t)*x)/math.factorial(x),2)
+
+print("probability that exactly 4 customers arrive",p(4))
+
+n=1-(p(0)+p(1)+p(2)+p(3)+p(4))
+print("probability that more than 4 customers arrive",n)
+
+m=p(0)+p(1)+p(2)+p(3)
+print(" rate of 3 per minute during a time interval of 2 min.",m)
  
 
-# Results and Output : 
+# Output : 
+ ![image](https://user-images.githubusercontent.com/75235167/172533890-f035d4e0-cfa4-4ea8-b189-54efc4242a80.png)
  
+# Results :
+
